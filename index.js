@@ -39,8 +39,9 @@ async function displayContent() {
     const pages = await loadSearchData();
     console.log("Loaded Pages:", pages); // Debug: Check fetched data
 
+    // FIXED: Use exact matching instead of includes()
     const matchingPage = pages.find(page => 
-      page.title.toLowerCase().includes(query.toLowerCase())
+      page.title.toLowerCase() === query.toLowerCase()
     );
 
     if (matchingPage) {
