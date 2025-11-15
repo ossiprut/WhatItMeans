@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 16px 0 16px 24px;
+  border-bottom: 1px solid #cccccc;
+  box-shadow: none;
+  justify-content: space-between;
+  z-index: 1000;
+  height: 75px;
+}
+
+.logo-title {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.logo-title .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: black;
+  margin: auto;
+}
+
+.topbar .search-form {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: none;
+  border: 1.5px solid rgba(0, 0, 0, 0.69);
+  padding: 0px 0px;
+}
+
+.topbar .search-button {
+  padding: 16px 32px;
+  font-size: 1.2em;
+  border: none;
+  background-color: #0078d7;
+  color: #fff;
+  border-radius: 24px 24px;
+  cursor: pointer;
+}
+
+.center-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  margin-top: 80px;
+}
+
+
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 72px rgb(230, 234, 108);
+  padding: 16px 32px;
+}
+
+.search-input {
+  padding: 16px 24px;
+  font-size: 1.5em;
+  border: none;
+  outline: none;
+  border-radius: 24px 24px;
+  width: 350px;
+}
+
+.search-button {
+  padding: 16px 32px;
+  font-size: 1.2em;
+  border: none;
+  background-color: #0078d7;
+  color: #fff;
+  border-radius: 24px 24px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #2474b6;
+}
+
+.search-button:active {
+  background-color: #368ed1;
+}
+
+.search-results-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+}
+
+#search-results {
+  padding: 0;
+  margin: 0;
+}
+
+#search-results h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#search-results p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.5;
+}
